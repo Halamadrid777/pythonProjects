@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="header">hello</h1>
+    <input type="text" id="inp" />
+    <button onclick="pressed()">press</button>
+    <p id="output"></p>
+    <p>{{fromFlask2}}</p>
+    /* this is imported from flask2
+    */
+    <script>
+        function pressed() {
+            var text = document.getElementById('inp').value;
+            output.innerHTML = text.toUpperCase();
+            document.getElementById("header").style.color = text;
+        }
+
+    </script>
+</body>
+
+</html>
